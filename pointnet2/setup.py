@@ -17,6 +17,7 @@ _ext_headers = glob.glob("{}/include/*".format(_ext_src_root))
 
 setup(
     name='pointnet2',
+    install_requires=["torch"],
     ext_modules=[
         CUDAExtension(
             name='pointnet2._ext',

@@ -61,7 +61,6 @@ setup(
     author="foolyc",
     url="https://github.com/foolyc/torchKNN",
     description="KNN implement in Pytorch 1.0 including both cpu version and gpu version",
-    install_requires=["torch"],
     ext_modules=get_extensions(),
     cmdclass={"build_ext": torch.utils.cpp_extension.BuildExtension},
 )

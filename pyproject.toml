@@ -1,0 +1,14 @@
+
+[project]
+name = "graspnetpy"
+version = "0.1"
+
+[tool.setuptools]
+packages = ["graspnetpy_dataset", "graspnetpy_knn", "graspnetpy_models", "graspnetpy_pointnet2", "graspnetpy_utils"]
+
+[tool.setuptools.package-dir]
+graspnetpy_dataset = "dataset"
+graspnetpy_knn = "knn"
+graspnetpy_models = "models"
+graspnetpy_pointnet2 = "pointnet2"
+graspnetpy_utils = "utils"

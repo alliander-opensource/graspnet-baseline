@@ -9,17 +9,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-ROOT_DIR = os.path.dirname(BASE_DIR)
-sys.path.append(ROOT_DIR)
-sys.path.append(os.path.join(ROOT_DIR, 'pointnet2'))
-sys.path.append(os.path.join(ROOT_DIR, 'utils'))
-
-from backbone import Pointnet2Backbone
-from modules import ApproachNet, CloudCrop, OperationNet, ToleranceNet
-from loss import get_loss
-from loss_utils import GRASP_MAX_WIDTH, GRASP_MAX_TOLERANCE
-from label_generation import process_grasp_labels, match_grasp_view_and_label, batch_viewpoint_params_to_matrix
+from graspnetpy_models.backbone import Pointnet2Backbone
+from graspnetpy_models.modules import ApproachNet, CloudCrop, OperationNet, ToleranceNet
+from graspnetpy_utils.loss_utils import GRASP_MAX_WIDTH, GRASP_MAX_TOLERANCE
+from graspnetpy_utils.label_generation import process_grasp_labels, match_grasp_view_and_label, batch_viewpoint_params_to_matrix
 
 
 class GraspNetStage1(nn.Module):

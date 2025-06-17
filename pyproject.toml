@@ -4,6 +4,7 @@ name = "graspnetpy"
 version = "0.1"
 dependencies = [
     "graspnetapi",
+    "ipython>=8.37.0",
     "knn-pytorch",
     "open3d>=0.19.0",
     "pointnet2",

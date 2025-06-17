@@ -2,6 +2,13 @@
 [project]
 name = "graspnetpy"
 version = "0.1"
+dependencies = [
+    "graspnetapi",
+    "knn-pytorch",
+    "open3d>=0.19.0",
+    "pointnet2",
+    "torch>=2.7.1",
+]
 
 [tool.setuptools]
 packages = ["graspnetpy_dataset", "graspnetpy_knn", "graspnetpy_models", "graspnetpy_pointnet2", "graspnetpy_utils"]
@@ -12,3 +19,8 @@ graspnetpy_knn = "knn"
 graspnetpy_models = "models"
 graspnetpy_pointnet2 = "pointnet2"
 graspnetpy_utils = "utils"
+
+[tool.uv.sources]
+graspnetapi = { git = "https://github.com/graspnet/graspnetAPI" }
+pointnet2 = { path = "pointnet2" }
+knn-pytorch = { path = "knn" }

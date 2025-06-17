@@ -1,1 +1,0 @@
-from graspnetpy_pointnet2 import pointnet2_modules

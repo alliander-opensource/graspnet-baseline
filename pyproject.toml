@@ -22,6 +22,6 @@ graspnetpy_pointnet2 = "pointnet2"
 graspnetpy_utils = "utils"
 
 [tool.uv.sources]
-graspnetapi = { git = "github.com/alliander-opensource/graspnetAPI" }
+graspnetapi = { git = "https://github.com/alliander-opensource/graspnetAPI" }
 pointnet2 = { path = "pointnet2" }
 knn-pytorch = { path = "knn" }
